@@ -1,0 +1,307 @@
+---
+title: "LLM-powered Programming and Data Analysis"
+subtitle: "Lex Nederbragt"
+date: 2026-01-06
+date-format: long
+lang: en
+format:
+  revealjs:
+    theme: [serif, custom.scss]
+    standalone: true
+#  html:
+#    output-file: DSC_Days_2025_Open-interpreter-webpage.html
+#    format-links: false
+#  gfm: default
+---
+
+
+::: {.content-visible when-format="revealjs"}
+
+## Lex Nederbragt
+
+- Associate Teaching professor, Dept. of Biosciences
+- Topics: Programming, Bioinformatics, Pedagogy
+- Teaching
+  - BIOS1101 - Introduction to computational models for Biosciences
+  - Other bioinformatics courses
+- Instructor for The Carpentries
+
+
+## Possibilities with LLMs
+
+* Ask for code
+* Run that code
+* Analyze (data)files
+
+::: {.fragment}
+### But
+
+* Not with UiO approved tools
+* Subscription
+:::
+
+## About this workshop
+
+### Connect an IDE through an API to an LLM to produce and run code
+ 
+* IDE: Integrated Development Environment
+* API: Application Programming interface
+  * let's you 'talk' to a website/program/service
+* LLM: Large Language Model (e.g. chatbot)
+
+
+## About this workshop
+
+### Connect an IDE through an API to an LLM to produce and run code
+ 
+* IDE: Visual Studio Code from Microsoft
+* API: UiO's Azure API to models
+* LLM: OpenAI's GPT models
+  * If time: local models than run on your laptop
+
+## About this workshop
+
+The goals
+
+* Use an LLM connected through Visual Studio Code to write computer code and execute it
+* Know the benefits of efficiently prompting the LLM, and the iterative process to obtain a functioning program
+* Discuss ethical and practical considerations when using LLM-based tools in scientific research
+
+## About this workshop
+
+### Programming language
+
+* Instructor will use Python
+* Should be OK to use any other language that is installed on your laptop
+* More common languagues will probaby work better
+
+## Caveats
+
+
+::: {.incremental}
+* Installation may be problematic for some
+* The workshop may run smooth - or not
+:::
+
+## Installation instructions
+
+* Python 3.11 works
+* Python 3.14 should work
+* The latest R version should work
+
+::: {.content-visible when-format="revealjs"}
+## Installation instructions
+:::
+
+It is highly recommended to use an environment for Python.
+
+Choose between
+
+* conda
+* python virtual environment
+
+## Installation using conda
+
+```.bash
+conda create --name dsdays python=3.11
+conda activate dsdays
+```
+
+## Installation using python virtual env 
+
+```.bash
+python -m venv /path/to/workshop_folder
+source /path/to/workshop_folder
+```
+
+
+## What did we install
+
+```.bash
+conda env export --from-history
+```
+
+
+## Our first task
+
+Ask:
+
+> Write a program that casts a die 1000 times and determines the frequency of sixes
+
+Then ask
+
+> What is the expected frequency?
+
+<!--
+## Settings
+
+From https://github.com/OpenInterpreter/open-interpreter/blob/main/README.md#context-window-max-tokens
+
+> For local mode, smaller context windows will use less RAM,
+> so we recommend trying a much shorter window (~1000) if it's failing / if it's slow.
+> Make sure max_tokens is less than context_window.
+
+```.bash
+interpreter --local --max_tokens 1000 --context_window 3000
+```
+
+::: {.content-visible when-format="revealjs"}
+## Settings
+:::
+
+If you see a warning at first use around `LiteLLM:ERROR:`,
+add this to your `interpreter` command:
+
+```
+--no-llm_supports_functions
+```
+
+## Another task
+
+> Write a program that casts two dice 1000 times and plots the distribution of the sum of the casts.
+
+## Other ways to use a local model
+
+Find the location of the model files
+
+```.bash
+interpreter --local_models
+```
+
+Now start the model server in a different terminal instance.
+
+On Mac:
+
+```.bash
+cd ~/Library/Application\ Support/open-interpreter/models/
+./Meta-Llama-3.1-8B-Instruct.Q4_K_M.llamafile
+```
+
+```
+software: llamafile 0.8.15
+model:    Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf
+compute:  Apple Metal GPU
+server:   http://127.0.0.1:8080/
+```
+
+
+Feel free to chat with the model ;-)
+
+
+::: {.content-visible when-format="revealjs"}
+## Other ways to use a local model
+:::
+
+
+Now you can use this server with Open-Interpreter:
+
+```.bash
+interpreter --api_base http://127.0.0.1:8080/v1
+```
+
+Alternatively:
+```.bash
+interpreter --api_base http://localhost:8080/v1 -m llamafile -ak dummykey
+```
+
+
+## We need a bigger model
+
+```.bash
+interpreter --model gpt-4o -ak YOUR_OPENAI_API_KEY
+```
+
+For other providers, see [https://docs.openinterpreter.com/language-models/hosted-models](https://docs.openinterpreter.com/language-models/hosted-models).
+
+Check the menu at the left.
+
+If you can't use such models, you can use my API access to gpt.uio.no
+
+
+Check the etherpad.
+
+Consider adding these options:
+
+```
+--context_window 160000 --max_tokens 1000 --max_output 10000
+```
+
+::: {.content-visible when-format="revealjs"}
+## We need a bigger model
+::: 
+
+Now repeat the tasks we have done so far.
+
+<!-- 
+You can modify the max_tokens and context_window (in tokens) of locally running models.
+
+For local mode, smaller context windows will use less RAM, so we recommend trying a much shorter window (~1000) if it's failing / if it's slow. Make sure max_tokens is less than context_window.
+
+interpreter --local --max_tokens 1000 --context_window 3000
+
+ -->
+
+## Let's get some data
+
+We will be using
+
+* [https://datahub.io/core/population](https://datahub.io/core/population)
+* [https://datahub.io/core/gdp](https://datahub.io/core/gdp)
+
+## Tasks: population
+
+> Download and inspect the csv file from
+> https://github.com/datasets/population/blob/main/data/population.csv
+
+> Plot the population size of Norway for all years present in the dataset
+
+> Plot the population size of the Nordic countries for all years present in the dataset together in one plot
+
+## Tasks: GDP, and combining datasets
+
+> Plot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv
+
+
+> Create a new csv file combining population size and gdp for Norway, use these files
+
+* https://github.com/datasets/gdp/blob/main/data/gdp.csv
+* https://github.com/datasets/population/blob/main/data/population.csv
+
+
+## Optional: create a script file
+
+> Write the final program to a script file
+
+
+## Try on your own data
+
+* Use excel files, or csv files, or ...
+* Need a datafile? Try Kaggle: [https://www.kaggle.com/datasets?sort=votes&fileType=csv](https://www.kaggle.com/datasets?sort=votes&fileType=csv)
+
+
+## Why use this setup?
+
+* Yellow data
+* Offline with local models
+
+## Ethical considerations
+
+::: {.incremental}
+
+* Where does the code come from?
+* Who pays for this?
+* Environmental footprint?
+
+:::
+
+::: {.content-visible when-format="revealjs"}
+## Evaluation
+
+
+<!--
+![](Evaluation-QR-464099_qr.png)
+
+### [https://nettskjema.no/a/464099](https://nettskjema.no/a/464099)
+:::
+
+-->

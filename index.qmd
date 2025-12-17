@@ -1,0 +1,6 @@
+---
+title: "DSDays 2026: LLM-powered Programming and Data Analysis"
+---
+
+Materials for the Digital Scholarship Days 2026 workshop [LLM-powered Programming and Data Analysis](https://www.ub.uio.no/english/courses-events/events/dsc/dsdays/2026/12-llm-powered-programming-and-data-analysis-20260106).
+

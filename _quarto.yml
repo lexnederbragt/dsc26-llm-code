@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "DSDays 2026: LLM-powered Programming and Data Analysis"
+  sidebar:
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: DSC_Days_2026_Open-interpreter.qmd
+        text: "Slides"
+        target: _blank
+      - href: tutorial.qmd
+        text: "Tutorial"
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
