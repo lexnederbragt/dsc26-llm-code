@@ -1,0 +1,176 @@
+[
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#lex-nederbragt",
+    "href": "DSC_Days_2026_LLM_code.html#lex-nederbragt",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Lex Nederbragt",
+    "text": "Lex Nederbragt\n\nAssociate Teaching professor, Dept. of Biosciences\nTopics: Programming, Bioinformatics, Pedagogy\nTeaching\n\nBIOS1101 - Introduction to computational models for Biosciences\nOther bioinformatics courses\n\nInstructor for The Carpentries"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#possibilities-with-llms",
+    "href": "DSC_Days_2026_LLM_code.html#possibilities-with-llms",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Possibilities with LLMs",
+    "text": "Possibilities with LLMs\n\nAsk for code\nRun that code\nAnalyze (data)files\n\n\nBut\n\nNot with UiO approved tools\nSubscription"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#about-this-workshop",
+    "href": "DSC_Days_2026_LLM_code.html#about-this-workshop",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "About this workshop",
+    "text": "About this workshop\nConnect an IDE through an API to an LLM to produce and run code\n\nIDE: Integrated Development Environment\nAPI: Application Programming interface\n\nlet’s you ‘talk’ to a website/program/service\n\nLLM: Large Language Model (e.g. chatbot)"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#about-this-workshop-1",
+    "href": "DSC_Days_2026_LLM_code.html#about-this-workshop-1",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "About this workshop",
+    "text": "About this workshop\nConnect an IDE through an API to an LLM to produce and run code\n\nIDE: Visual Studio Code from Microsoft\nAPI: UiO’s Azure API to models\nLLM: OpenAI’s GPT models\n\nIf time: local models than run on your laptop"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#about-this-workshop-2",
+    "href": "DSC_Days_2026_LLM_code.html#about-this-workshop-2",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "About this workshop",
+    "text": "About this workshop\nThe goals\n\nUse an LLM connected through Visual Studio Code to write computer code and execute it\nKnow the benefits of efficiently prompting the LLM, and the iterative process to obtain a functioning program\nDiscuss ethical and practical considerations when using LLM-based tools in scientific research"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#about-this-workshop-3",
+    "href": "DSC_Days_2026_LLM_code.html#about-this-workshop-3",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "About this workshop",
+    "text": "About this workshop\nProgramming language\n\nInstructor will use Python\nShould be OK to use any other language that is installed on your laptop\nMore common languagues will probaby work better"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#caveats",
+    "href": "DSC_Days_2026_LLM_code.html#caveats",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Caveats",
+    "text": "Caveats\n\n\nInstallation may be problematic for some\nThe workshop may run smooth - or not"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#installation-instructions",
+    "href": "DSC_Days_2026_LLM_code.html#installation-instructions",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Installation instructions",
+    "text": "Installation instructions\n\nPython 3.11 works\nPython 3.14 should work\nThe latest R version should work"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#installation-instructions-1",
+    "href": "DSC_Days_2026_LLM_code.html#installation-instructions-1",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Installation instructions",
+    "text": "Installation instructions\nIt is highly recommended to use an environment for Python.\nChoose between\n\nconda\npython virtual environment"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#installation-using-conda",
+    "href": "DSC_Days_2026_LLM_code.html#installation-using-conda",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Installation using conda",
+    "text": "Installation using conda\nconda create --name dsdays python=3.11\nconda activate dsdays"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#installation-using-python-virtual-env",
+    "href": "DSC_Days_2026_LLM_code.html#installation-using-python-virtual-env",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Installation using python virtual env",
+    "text": "Installation using python virtual env\npython -m venv /path/to/workshop_folder\nsource /path/to/workshop_folder"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#what-did-we-install",
+    "href": "DSC_Days_2026_LLM_code.html#what-did-we-install",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "What did we install",
+    "text": "What did we install\nconda env export --from-history"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#our-first-task",
+    "href": "DSC_Days_2026_LLM_code.html#our-first-task",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Our first task",
+    "text": "Our first task\nAsk:\n\nWrite a program that casts a die 1000 times and determines the frequency of sixes\n\nThen ask\n\nWhat is the expected frequency?"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#lets-get-some-data",
+    "href": "DSC_Days_2026_LLM_code.html#lets-get-some-data",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Let’s get some data",
+    "text": "Let’s get some data\nWe will be using\n\nhttps://datahub.io/core/population\nhttps://datahub.io/core/gdp"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#tasks-population",
+    "href": "DSC_Days_2026_LLM_code.html#tasks-population",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Tasks: population",
+    "text": "Tasks: population\n\nDownload and inspect the csv file from https://github.com/datasets/population/blob/main/data/population.csv\n\n\nPlot the population size of Norway for all years present in the dataset\n\n\nPlot the population size of the Nordic countries for all years present in the dataset together in one plot"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#tasks-gdp-and-combining-datasets",
+    "href": "DSC_Days_2026_LLM_code.html#tasks-gdp-and-combining-datasets",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Tasks: GDP, and combining datasets",
+    "text": "Tasks: GDP, and combining datasets\n\nPlot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv\n\n\nCreate a new csv file combining population size and gdp for Norway, use these files\n\n\nhttps://github.com/datasets/gdp/blob/main/data/gdp.csv\nhttps://github.com/datasets/population/blob/main/data/population.csv"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#optional-create-a-script-file",
+    "href": "DSC_Days_2026_LLM_code.html#optional-create-a-script-file",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Optional: create a script file",
+    "text": "Optional: create a script file\n\nWrite the final program to a script file"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#try-on-your-own-data",
+    "href": "DSC_Days_2026_LLM_code.html#try-on-your-own-data",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Try on your own data",
+    "text": "Try on your own data\n\nUse excel files, or csv files, or …\nNeed a datafile? Try Kaggle: https://www.kaggle.com/datasets?sort=votes&fileType=csv"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#why-use-this-setup",
+    "href": "DSC_Days_2026_LLM_code.html#why-use-this-setup",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Why use this setup?",
+    "text": "Why use this setup?\n\nYellow data\nOffline with local models"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#ethical-considerations",
+    "href": "DSC_Days_2026_LLM_code.html#ethical-considerations",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Ethical considerations",
+    "text": "Ethical considerations\n\n\nWhere does the code come from?\nWho pays for this?\nEnvironmental footprint?"
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#evaluation",
+    "href": "DSC_Days_2026_LLM_code.html#evaluation",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Evaluation",
+    "text": "Evaluation"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "",
+    "text": "Materials for the Digital Scholarship Days 2026 workshop LLM-powered Programming and Data Analysis.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "tutorial.html",
+    "href": "tutorial.html",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "",
+    "text": "Kommer",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "not_under_version_control.html",
+    "href": "not_under_version_control.html",
+    "title": "population data",
+    "section": "",
+    "text": "https://etherpad.wikimedia.org/p/dsc26-llm-code\ninterpreter –model azure/My_gpt-4o -ab https://gpt-mn-cees-swe-1.openai.azure.com/ -av 2024-05-01-preview -ak 0857e66200d14309b7db081e41ddf9b1 –context_window 160000 –max_tokens 1000 –max_output 10000\nUsing Llama-3.1-8B-Instruct\nWhat is the capital of Norway\nOpen Chrome and go to YouTube.\nRead in and describe the content of /Users/alexajo/github/bios1100-uke-for-uke/src/konte-eksamen/spelt.csv Plot the content of /Users/alexajo/github/bios1100-uke-for-uke/src/konte-eksamen/spelt.csv together with /Users/alexajo/github/bios1100-uke-for-uke/src/konte-eksamen/wheat.csv in the same scatterplot\n\npopulation data\nDownload and inspect the csv file from https://github.com/datasets/population/blob/main/data/population.csv\nPlot the population size of Norway for all years present in the dataset\nPlot the population size of the Nordic countries for all years present in the dataset together in one plot\nPlot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv"
+  }
+]
