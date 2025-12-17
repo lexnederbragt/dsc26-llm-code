@@ -7,7 +7,9 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: DSC_Days_2026_Open-interpreter.qmd
+      - href: pre-workshop.qmd
+        text: Pre-workshop instructions
+      - href: DSC_Days_2026_LLM_code.qmd
         text: "Slides"
         target: _blank
       - href: tutorial.qmd

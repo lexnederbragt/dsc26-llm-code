@@ -1,0 +1,18 @@
+From the prerequisities for this workshop:
+
+* Experience with Python programming or a similar programming language.
+* Experience with using Visual Studio Code for working with code.
+* A laptop with administrator access.
+
+This means that at a minimum, before coming to the workshop, you should have
+
+* installed Visual Studio Code on your laptop
+* have administrator rights, if necessary temporary for the duration of the workshop (ask your local IT folks)
+* installed Python or a similar programming language (for example, R should be fine too)
+
+Further notes:
+
+* We may at the end work with modesl that locally on your laptop, for this a more recent laptop with a good GPU is preferred.
+* Knowing the basics of version control is a benefit.
+* Knowing the basics of LLMs and their usage is a benefit but not an absolute requirement.
+

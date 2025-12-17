@@ -6,4 +6,4 @@ A Digital Scholarship Days 2026 [workshop](https://www.ub.uio.no/english/courses
 
 * Requires quarto and pandoc installed
 * Run `quarto render` to get the html version locally
-* Run `quarto publish gh-pages` to update the [site on GitHub Pages](https://dsc26-llm-code.github.io/)
+* Run `quarto publish gh-pages` to update the [site on GitHub Pages](https://lexnederbragt.github.io/dsc26-llm-code)
