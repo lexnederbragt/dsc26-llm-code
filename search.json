@@ -230,10 +230,13 @@
     ]
   },
   {
-    "objectID": "not_under_version_control.html",
-    "href": "not_under_version_control.html",
-    "title": "population data",
+    "objectID": "pre-workshop.html",
+    "href": "pre-workshop.html",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "",
-    "text": "https://etherpad.wikimedia.org/p/dsc26-llm-code\ninterpreter –model azure/My_gpt-4o -ab https://gpt-mn-cees-swe-1.openai.azure.com/ -av 2024-05-01-preview -ak 0857e66200d14309b7db081e41ddf9b1 –context_window 160000 –max_tokens 1000 –max_output 10000\nUsing Llama-3.1-8B-Instruct\nWhat is the capital of Norway\nOpen Chrome and go to YouTube.\nRead in and describe the content of /Users/alexajo/github/bios1100-uke-for-uke/src/konte-eksamen/spelt.csv Plot the content of /Users/alexajo/github/bios1100-uke-for-uke/src/konte-eksamen/spelt.csv together with /Users/alexajo/github/bios1100-uke-for-uke/src/konte-eksamen/wheat.csv in the same scatterplot\n\npopulation data\nDownload and inspect the csv file from https://github.com/datasets/population/blob/main/data/population.csv\nPlot the population size of Norway for all years present in the dataset\nPlot the population size of the Nordic countries for all years present in the dataset together in one plot\nPlot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv"
+    "text": "The prerequisities for this workshop are the following:\n\nExperience with Python programming or a similar programming language.\nExperience with using Visual Studio Code for working with code.\nA laptop with administrator access.\n\nThis means that at a minmum, before coming to the workshop, you should have\n\ninstalled Visual Studio Code on your laptop\nhave administrator rights, if necessary temporary for the duration of the workshop (ask your local IT folks)\ninstalled Python or a similar programming language (for example, R should be fine too))\n\nFurther notes:\n\nWe may at the end work with modesl that locally on your laptop, for this a more recent laptop with a good GPU is preferred.\nKnowing the basics of version control is a benefit.\nKnowing the basics of LLMs and their usage is a benefit but not an absolute requirement.",
+    "crumbs": [
+      "Pre-workshop instructions"
+    ]
   }
 ]
