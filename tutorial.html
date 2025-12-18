@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -134,8 +168,43 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#installation-instructions" id="toc-installation-instructions" class="nav-link active" data-scroll-target="#installation-instructions">Installation instructions</a></li>
+  <li><a href="#installation-using-conda" id="toc-installation-using-conda" class="nav-link" data-scroll-target="#installation-using-conda">Installation using conda</a></li>
+  <li><a href="#installation-using-python-virtual-env" id="toc-installation-using-python-virtual-env" class="nav-link" data-scroll-target="#installation-using-python-virtual-env">Installation using python virtual env</a></li>
+  <li><a href="#visual-studio-code" id="toc-visual-studio-code" class="nav-link" data-scroll-target="#visual-studio-code">Visual Studio Code</a></li>
+  <li><a href="#visual-studio-code-1" id="toc-visual-studio-code-1" class="nav-link" data-scroll-target="#visual-studio-code-1">Visual Studio Code</a>
+  <ul class="collapse">
+  <li><a href="#connecting-to-an-llm" id="toc-connecting-to-an-llm" class="nav-link" data-scroll-target="#connecting-to-an-llm">Connecting to an LLM</a></li>
+  </ul></li>
+  <li><a href="#visual-studio-code-2" id="toc-visual-studio-code-2" class="nav-link" data-scroll-target="#visual-studio-code-2">Visual Studio Code</a>
+  <ul class="collapse">
+  <li><a href="#connecting-to-uios-azure-api-to-models" id="toc-connecting-to-uios-azure-api-to-models" class="nav-link" data-scroll-target="#connecting-to-uios-azure-api-to-models">Connecting to UiO’s Azure API to models</a></li>
+  </ul></li>
+  <li><a href="#visual-studio-code-3" id="toc-visual-studio-code-3" class="nav-link" data-scroll-target="#visual-studio-code-3">Visual Studio Code</a>
+  <ul class="collapse">
+  <li><a href="#connecting-to-uios-azure-api-to-models-1" id="toc-connecting-to-uios-azure-api-to-models-1" class="nav-link" data-scroll-target="#connecting-to-uios-azure-api-to-models-1">Connecting to UiO’s Azure API to models</a></li>
+  </ul></li>
+  <li><a href="#visual-studio-code-4" id="toc-visual-studio-code-4" class="nav-link" data-scroll-target="#visual-studio-code-4">Visual Studio Code</a>
+  <ul class="collapse">
+  <li><a href="#which-model-do-we-use" id="toc-which-model-do-we-use" class="nav-link" data-scroll-target="#which-model-do-we-use">Which model do we use</a></li>
+  <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory">Working directory</a></li>
+  </ul></li>
+  <li><a href="#our-first-task---chatbot" id="toc-our-first-task---chatbot" class="nav-link" data-scroll-target="#our-first-task---chatbot">Our first task - Chatbot</a></li>
+  <li><a href="#our-first-task---roo-code" id="toc-our-first-task---roo-code" class="nav-link" data-scroll-target="#our-first-task---roo-code">Our first task - Roo code</a></li>
+  <li><a href="#our-first-task---roo-code-1" id="toc-our-first-task---roo-code-1" class="nav-link" data-scroll-target="#our-first-task---roo-code-1">Our first task - Roo code</a></li>
+  <li><a href="#optional-put-the-folder-under-version-control" id="toc-optional-put-the-folder-under-version-control" class="nav-link" data-scroll-target="#optional-put-the-folder-under-version-control">Optional: put the folder under version control</a></li>
+  <li><a href="#another-task" id="toc-another-task" class="nav-link" data-scroll-target="#another-task">Another task</a></li>
+  <li><a href="#lets-get-some-data" id="toc-lets-get-some-data" class="nav-link" data-scroll-target="#lets-get-some-data">Let’s get some data</a></li>
+  <li><a href="#tasks-population" id="toc-tasks-population" class="nav-link" data-scroll-target="#tasks-population">Tasks: population</a></li>
+  <li><a href="#tasks-gdp-and-combining-datasets" id="toc-tasks-gdp-and-combining-datasets" class="nav-link" data-scroll-target="#tasks-gdp-and-combining-datasets">Tasks: GDP, and combining datasets</a></li>
+  <li><a href="#try-on-your-own-data" id="toc-try-on-your-own-data" class="nav-link" data-scroll-target="#try-on-your-own-data">Try on your own data</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
@@ -143,9 +212,201 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Kommer</p>
+<section id="installation-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="installation-instructions">Installation instructions</h2>
+<ul>
+<li>Python 3.11 works</li>
+<li>Python 3.14 should work</li>
+<li>The latest R version should work</li>
+</ul>
+<p>It is highly recommended to use an environment for Python.</p>
+<p>Choose between</p>
+<ul>
+<li>conda</li>
+<li>python virtual environment</li>
+</ul>
+</section>
+<section id="installation-using-conda" class="level2">
+<h2 class="anchored" data-anchor-id="installation-using-conda">Installation using conda</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode .bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> dsdays python=3.11</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate dsdays</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="installation-using-python-virtual-env" class="level2">
+<h2 class="anchored" data-anchor-id="installation-using-python-virtual-env">Installation using python virtual env</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode .bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> venv /path/to/workshop_folder</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> /path/to/workshop_folder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="visual-studio-code" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code">Visual Studio Code</h2>
+<ul>
+<li>Install the extension “Roo Code” (<em>not</em> “Nightly”)
+<ul>
+<li>https://docs.roocode.com</li>
+</ul></li>
+</ul>
+</section>
+<section id="visual-studio-code-1" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-1">Visual Studio Code</h2>
+<section id="connecting-to-an-llm" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-to-an-llm">Connecting to an LLM</h3>
+<ul>
+<li>We will provide one</li>
+<li>Feel free to use your own subscription instead
+<ul>
+<li>Claude, Claude Sonnet 4.5 is recoomended by Roo Code</li>
+<li>Open AI, GPT-5 Codex should be OK</li>
+<li>Google, Gemini 3 Pro is best but 3 Flash should be fine too</li>
+</ul></li>
+</ul>
+<p>See https://docs.roocode.com/providers/ for instructions</p>
+</section>
+</section>
+<section id="visual-studio-code-2" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-2">Visual Studio Code</h2>
+<section id="connecting-to-uios-azure-api-to-models" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-to-uios-azure-api-to-models">Connecting to UiO’s Azure API to models</h3>
+<ul>
+<li>Click on the Roo Code icon (the Kangeroo) in the left sidebar</li>
+<li>Choose “use another provider” <!-- * Open Roo Code Settings (Click the gear icon in the Roo Code panel) --></li>
+<li>Select Provider: Choose “OpenAI Compatible”</li>
+<li>Use the Base URL and API Key provided</li>
+<li>Model: Type <code>dsdays26</code> in the search box, click on “Use custom: dsdays26”</li>
+<li>Select “Use Azure”</li>
+<li>Click “Get Started”</li>
+</ul>
+</section>
+</section>
+<section id="visual-studio-code-3" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-3">Visual Studio Code</h2>
+<section id="connecting-to-uios-azure-api-to-models-1" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-to-uios-azure-api-to-models-1">Connecting to UiO’s Azure API to models</h3>
+<ul>
+<li>Test the setup:
+<ul>
+<li>Under the message box, choose “Ask”</li>
+<li>Type “Just saying Hi”</li>
+<li>You should see “Task Completed”</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="visual-studio-code-4" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-4">Visual Studio Code</h2>
+<p>Roo Code will ask for permission to create a new file.</p>
+<section id="which-model-do-we-use" class="level3">
+<h3 class="anchored" data-anchor-id="which-model-do-we-use">Which model do we use</h3>
+<ul>
+<li>GPT-4.1, because it is fast (and cheap), and more than good enough for this workshop</li>
+<li>If we have time, we may try a more advanced model
+<ul>
+<li>Or even one running locally…</li>
+</ul></li>
+</ul>
+</section>
+<section id="working-directory" class="level3">
+<h3 class="anchored" data-anchor-id="working-directory">Working directory</h3>
+<ul>
+<li>Choose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)</li>
+</ul>
+</section>
+</section>
+<section id="our-first-task---chatbot" class="level2">
+<h2 class="anchored" data-anchor-id="our-first-task---chatbot">Our first task - Chatbot</h2>
+<p>Go to gpt.uio.no, select GPT 5 and ask the following question</p>
+<blockquote class="blockquote">
+<p>Write a Python program that casts a die 1000 times and determines the frequency of sixes</p>
+</blockquote>
+<p>Copy the program into VS Code and run it</p>
+<ul>
+<li>through the terminal (built-in or external)</li>
+<li>through VS Code</li>
+<li>remember to activate the environment you set up</li>
+</ul>
+</section>
+<section id="our-first-task---roo-code" class="level2">
+<h2 class="anchored" data-anchor-id="our-first-task---roo-code">Our first task - Roo code</h2>
+<ul>
+<li>Under the message box, choose “Code”</li>
+</ul>
+<p>Ask:</p>
+<blockquote class="blockquote">
+<p>Write a Python program that casts a die 1000 times and determines the frequency of sixes</p>
+</blockquote>
+<p>Roo Code will ask for permission to create a new file.</p>
+<p>Then ask Roo Code to run it for you.</p>
+</section>
+<section id="our-first-task---roo-code-1" class="level2">
+<h2 class="anchored" data-anchor-id="our-first-task---roo-code-1">Our first task - Roo code</h2>
+<p>Now select “Ask” persona and ask</p>
+<blockquote class="blockquote">
+<p>What is the expected frequency?</p>
+</blockquote>
+</section>
+<section id="optional-put-the-folder-under-version-control" class="level2">
+<h2 class="anchored" data-anchor-id="optional-put-the-folder-under-version-control">Optional: put the folder under version control</h2>
+<ul>
+<li>Add and commit the script file</li>
+</ul>
+</section>
+<section id="another-task" class="level2">
+<h2 class="anchored" data-anchor-id="another-task">Another task</h2>
+<ul>
+<li>Select “Code” persona again</li>
+</ul>
+<blockquote class="blockquote">
+<p>Change the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.</p>
+</blockquote>
+<ul>
+<li>Give Roo Code the permissions it needs</li>
+</ul>
+</section>
+<section id="lets-get-some-data" class="level2">
+<h2 class="anchored" data-anchor-id="lets-get-some-data">Let’s get some data</h2>
+<p>We will be using</p>
+<ul>
+<li><p><a href="https://datahub.io/core/population">https://datahub.io/core/population</a></p></li>
+<li><p><a href="https://datahub.io/core/gdp">https://datahub.io/core/gdp</a></p></li>
+<li><p>Download and inspect the csv file https://github.com/datasets/population/blob/main/data/population.csv</p>
+<ul>
+<li>OR ask Roo Code if it can do that for you!</li>
+</ul></li>
+</ul>
+</section>
+<section id="tasks-population" class="level2">
+<h2 class="anchored" data-anchor-id="tasks-population">Tasks: population</h2>
+<ul>
+<li>Start a new task</li>
+</ul>
+<blockquote class="blockquote">
+<p><code>Ask</code>: What can you tell me about the file population.csv?</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><code>Code</code>: Plot the population size of Norway for all years present in the dataset</p>
+</blockquote>
+<blockquote class="blockquote">
+<p><code>Code</code>: Plot the population size of the Nordic countries for all years present in the dataset together in one plot</p>
+</blockquote>
+</section>
+<section id="tasks-gdp-and-combining-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="tasks-gdp-and-combining-datasets">Tasks: GDP, and combining datasets</h2>
+<blockquote class="blockquote">
+<p><code>Code</code>: Plot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv</p>
+</blockquote>
+<ul>
+<li><p>See if you can create a new csv file combining population size and gdp for Norway, using these files to start with</p></li>
+<li><p>https://github.com/datasets/gdp/blob/main/data/gdp.csv</p></li>
+<li><p>https://github.com/datasets/population/blob/main/data/population.csv</p></li>
+</ul>
+</section>
+<section id="try-on-your-own-data" class="level2">
+<h2 class="anchored" data-anchor-id="try-on-your-own-data">Try on your own data</h2>
+<ul>
+<li>Use excel files, or csv files, or …</li>
+<li>Need a datafile? Try Kaggle: <a href="https://www.kaggle.com/datasets?sort=votes&amp;fileType=csv">https://www.kaggle.com/datasets?sort=votes&amp;fileType=csv</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

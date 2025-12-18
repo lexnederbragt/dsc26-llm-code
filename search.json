@@ -20,6 +20,16 @@
     ]
   },
   {
+    "objectID": "DSC_Days_2026_LLM_code.html#tools-that-can-do-this",
+    "href": "DSC_Days_2026_LLM_code.html#tools-that-can-do-this",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Tools that can do this",
+    "text": "Tools that can do this\n\nCursor\nClaude Code\nOpen AI Codex\nGoogle Gemini CLI\n…\n\n\nThis workshop\n\nSomething a bit different",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
     "objectID": "DSC_Days_2026_LLM_code.html#about-this-workshop",
     "href": "DSC_Days_2026_LLM_code.html#about-this-workshop",
     "title": "LLM-powered Programming and Data Analysis",
@@ -110,21 +120,101 @@
     ]
   },
   {
-    "objectID": "DSC_Days_2026_LLM_code.html#what-did-we-install",
-    "href": "DSC_Days_2026_LLM_code.html#what-did-we-install",
+    "objectID": "DSC_Days_2026_LLM_code.html#visual-studio-code",
+    "href": "DSC_Days_2026_LLM_code.html#visual-studio-code",
     "title": "LLM-powered Programming and Data Analysis",
-    "section": "What did we install",
-    "text": "What did we install\nconda env export --from-history",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\n\nInstall the extension “Roo Code” (not “Nightly”)\n\nhttps://docs.roocode.com",
     "crumbs": [
       "Slides"
     ]
   },
   {
-    "objectID": "DSC_Days_2026_LLM_code.html#our-first-task",
-    "href": "DSC_Days_2026_LLM_code.html#our-first-task",
+    "objectID": "DSC_Days_2026_LLM_code.html#visual-studio-code-1",
+    "href": "DSC_Days_2026_LLM_code.html#visual-studio-code-1",
     "title": "LLM-powered Programming and Data Analysis",
-    "section": "Our first task",
-    "text": "Our first task\nAsk:\n\nWrite a program that casts a die 1000 times and determines the frequency of sixes\n\nThen ask\n\nWhat is the expected frequency?",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\nConnecting to an LLM\n\nWe will provide one\nFeel free to use your own subscription instead\n\nClaude, Claude Sonnet 4.5 is recoomended by Roo Code\nOpen AI, GPT-5 Codex should be OK\nGoogle, Gemini 3 Pro is best but 3 Flash should be fine too\n\n\nSee https://docs.roocode.com/providers/ for instructions",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#visual-studio-code-2",
+    "href": "DSC_Days_2026_LLM_code.html#visual-studio-code-2",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\nConnecting to UiO’s Azure API to models\n\nClick on the Roo Code icon (the Kangeroo) in the left sidebar\nChoose “use another provider” \nSelect Provider: Choose “OpenAI Compatible”\nUse the Base URL and API Key provided\nModel: Type dsdays26 in the search box, click on “Use custom: dsdays26”\nSelect “Use Azure”\nClick “Get Started”",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#visual-studio-code-3",
+    "href": "DSC_Days_2026_LLM_code.html#visual-studio-code-3",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\nConnecting to UiO’s Azure API to models\n\nTest the setup:\n\nUnder the message box, choose “Ask”\nType “Just saying Hi”\nYou should see “Task Completed”",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#visual-studio-code-4",
+    "href": "DSC_Days_2026_LLM_code.html#visual-studio-code-4",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\nRoo Code will ask for permission to create a new file.\nWhich model do we use\n\nGPT-4.1, because it is fast (and cheap), and more than good enough for this workshop\nIf we have time, we may try a more advanced model\n\nOr even one running locally…\n\n\nWorking directory\n\nChoose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#our-first-task---chatbot",
+    "href": "DSC_Days_2026_LLM_code.html#our-first-task---chatbot",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Our first task - Chatbot",
+    "text": "Our first task - Chatbot\nGo to gpt.uio.no, select GPT 5 and ask the following question\n\nWrite a Python program that casts a die 1000 times and determines the frequency of sixes\n\nCopy the program into VS Code and run it\n\nthrough the terminal (built-in or external)\nthrough VS Code\nremember to activate the environment you set up",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#our-first-task---roo-code",
+    "href": "DSC_Days_2026_LLM_code.html#our-first-task---roo-code",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Our first task - Roo code",
+    "text": "Our first task - Roo code\n\nUnder the message box, choose “Code”\n\nAsk:\n\nWrite a Python program that casts a die 1000 times and determines the frequency of sixes\n\nRoo Code will ask for permission to create a new file.\nThen ask Roo Code to run it for you.",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#our-first-task---roo-code-1",
+    "href": "DSC_Days_2026_LLM_code.html#our-first-task---roo-code-1",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Our first task - Roo code",
+    "text": "Our first task - Roo code\nNow select “Ask” persona and ask\n\nWhat is the expected frequency?",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#optional-put-the-folder-under-version-control",
+    "href": "DSC_Days_2026_LLM_code.html#optional-put-the-folder-under-version-control",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Optional: put the folder under version control",
+    "text": "Optional: put the folder under version control\n\nAdd and commit the script file",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#another-task",
+    "href": "DSC_Days_2026_LLM_code.html#another-task",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Another task",
+    "text": "Another task\n\nSelect “Code” persona again\n\n\nChange the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.\n\n\nGive Roo Code the permissions it needs",
     "crumbs": [
       "Slides"
     ]
@@ -134,7 +224,7 @@
     "href": "DSC_Days_2026_LLM_code.html#lets-get-some-data",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Let’s get some data",
-    "text": "Let’s get some data\nWe will be using\n\nhttps://datahub.io/core/population\nhttps://datahub.io/core/gdp",
+    "text": "Let’s get some data\nWe will be using\n\nhttps://datahub.io/core/population\nhttps://datahub.io/core/gdp\nDownload and inspect the csv file https://github.com/datasets/population/blob/main/data/population.csv\n\nOR ask Roo Code if it can do that for you!",
     "crumbs": [
       "Slides"
     ]
@@ -144,7 +234,7 @@
     "href": "DSC_Days_2026_LLM_code.html#tasks-population",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Tasks: population",
-    "text": "Tasks: population\n\nDownload and inspect the csv file from https://github.com/datasets/population/blob/main/data/population.csv\n\n\nPlot the population size of Norway for all years present in the dataset\n\n\nPlot the population size of the Nordic countries for all years present in the dataset together in one plot",
+    "text": "Tasks: population\n\nStart a new task\n\n\nAsk: What can you tell me about the file population.csv?\n\n\nCode: Plot the population size of Norway for all years present in the dataset\n\n\nCode: Plot the population size of the Nordic countries for all years present in the dataset together in one plot",
     "crumbs": [
       "Slides"
     ]
@@ -154,17 +244,7 @@
     "href": "DSC_Days_2026_LLM_code.html#tasks-gdp-and-combining-datasets",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Tasks: GDP, and combining datasets",
-    "text": "Tasks: GDP, and combining datasets\n\nPlot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv\n\n\nCreate a new csv file combining population size and gdp for Norway, use these files\n\n\nhttps://github.com/datasets/gdp/blob/main/data/gdp.csv\nhttps://github.com/datasets/population/blob/main/data/population.csv",
-    "crumbs": [
-      "Slides"
-    ]
-  },
-  {
-    "objectID": "DSC_Days_2026_LLM_code.html#optional-create-a-script-file",
-    "href": "DSC_Days_2026_LLM_code.html#optional-create-a-script-file",
-    "title": "LLM-powered Programming and Data Analysis",
-    "section": "Optional: create a script file",
-    "text": "Optional: create a script file\n\nWrite the final program to a script file",
+    "text": "Tasks: GDP, and combining datasets\n\nCode: Plot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv\n\n\nSee if you can create a new csv file combining population size and gdp for Norway, using these files to start with\nhttps://github.com/datasets/gdp/blob/main/data/gdp.csv\nhttps://github.com/datasets/population/blob/main/data/population.csv",
     "crumbs": [
       "Slides"
     ]
@@ -204,7 +284,7 @@
     "href": "DSC_Days_2026_LLM_code.html#evaluation",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Evaluation",
-    "text": "Evaluation",
+    "text": "Evaluation\n\nhttps://nettskjema.no/a/dsdays2026",
     "crumbs": [
       "Slides"
     ]
@@ -224,7 +304,177 @@
     "href": "tutorial.html",
     "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "",
-    "text": "Kommer",
+    "text": "Python 3.11 works\nPython 3.14 should work\nThe latest R version should work\n\nIt is highly recommended to use an environment for Python.\nChoose between\n\nconda\npython virtual environment",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#installation-instructions",
+    "href": "tutorial.html#installation-instructions",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "",
+    "text": "Python 3.11 works\nPython 3.14 should work\nThe latest R version should work\n\nIt is highly recommended to use an environment for Python.\nChoose between\n\nconda\npython virtual environment",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#installation-using-conda",
+    "href": "tutorial.html#installation-using-conda",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Installation using conda",
+    "text": "Installation using conda\nconda create --name dsdays python=3.11\nconda activate dsdays",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#installation-using-python-virtual-env",
+    "href": "tutorial.html#installation-using-python-virtual-env",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Installation using python virtual env",
+    "text": "Installation using python virtual env\npython -m venv /path/to/workshop_folder\nsource /path/to/workshop_folder",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#visual-studio-code",
+    "href": "tutorial.html#visual-studio-code",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\n\nInstall the extension “Roo Code” (not “Nightly”)\n\nhttps://docs.roocode.com",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#visual-studio-code-1",
+    "href": "tutorial.html#visual-studio-code-1",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\n\nConnecting to an LLM\n\nWe will provide one\nFeel free to use your own subscription instead\n\nClaude, Claude Sonnet 4.5 is recoomended by Roo Code\nOpen AI, GPT-5 Codex should be OK\nGoogle, Gemini 3 Pro is best but 3 Flash should be fine too\n\n\nSee https://docs.roocode.com/providers/ for instructions",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#visual-studio-code-2",
+    "href": "tutorial.html#visual-studio-code-2",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\n\nConnecting to UiO’s Azure API to models\n\nClick on the Roo Code icon (the Kangeroo) in the left sidebar\nChoose “use another provider” \nSelect Provider: Choose “OpenAI Compatible”\nUse the Base URL and API Key provided\nModel: Type dsdays26 in the search box, click on “Use custom: dsdays26”\nSelect “Use Azure”\nClick “Get Started”",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#visual-studio-code-3",
+    "href": "tutorial.html#visual-studio-code-3",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\n\nConnecting to UiO’s Azure API to models\n\nTest the setup:\n\nUnder the message box, choose “Ask”\nType “Just saying Hi”\nYou should see “Task Completed”",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#visual-studio-code-4",
+    "href": "tutorial.html#visual-studio-code-4",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\nRoo Code will ask for permission to create a new file.\n\nWhich model do we use\n\nGPT-4.1, because it is fast (and cheap), and more than good enough for this workshop\nIf we have time, we may try a more advanced model\n\nOr even one running locally…\n\n\n\n\nWorking directory\n\nChoose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#our-first-task---chatbot",
+    "href": "tutorial.html#our-first-task---chatbot",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Our first task - Chatbot",
+    "text": "Our first task - Chatbot\nGo to gpt.uio.no, select GPT 5 and ask the following question\n\nWrite a Python program that casts a die 1000 times and determines the frequency of sixes\n\nCopy the program into VS Code and run it\n\nthrough the terminal (built-in or external)\nthrough VS Code\nremember to activate the environment you set up",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#our-first-task---roo-code",
+    "href": "tutorial.html#our-first-task---roo-code",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Our first task - Roo code",
+    "text": "Our first task - Roo code\n\nUnder the message box, choose “Code”\n\nAsk:\n\nWrite a Python program that casts a die 1000 times and determines the frequency of sixes\n\nRoo Code will ask for permission to create a new file.\nThen ask Roo Code to run it for you.",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#our-first-task---roo-code-1",
+    "href": "tutorial.html#our-first-task---roo-code-1",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Our first task - Roo code",
+    "text": "Our first task - Roo code\nNow select “Ask” persona and ask\n\nWhat is the expected frequency?",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#optional-put-the-folder-under-version-control",
+    "href": "tutorial.html#optional-put-the-folder-under-version-control",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Optional: put the folder under version control",
+    "text": "Optional: put the folder under version control\n\nAdd and commit the script file",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#another-task",
+    "href": "tutorial.html#another-task",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Another task",
+    "text": "Another task\n\nSelect “Code” persona again\n\n\nChange the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.\n\n\nGive Roo Code the permissions it needs",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#lets-get-some-data",
+    "href": "tutorial.html#lets-get-some-data",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Let’s get some data",
+    "text": "Let’s get some data\nWe will be using\n\nhttps://datahub.io/core/population\nhttps://datahub.io/core/gdp\nDownload and inspect the csv file https://github.com/datasets/population/blob/main/data/population.csv\n\nOR ask Roo Code if it can do that for you!",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#tasks-population",
+    "href": "tutorial.html#tasks-population",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Tasks: population",
+    "text": "Tasks: population\n\nStart a new task\n\n\nAsk: What can you tell me about the file population.csv?\n\n\nCode: Plot the population size of Norway for all years present in the dataset\n\n\nCode: Plot the population size of the Nordic countries for all years present in the dataset together in one plot",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#tasks-gdp-and-combining-datasets",
+    "href": "tutorial.html#tasks-gdp-and-combining-datasets",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Tasks: GDP, and combining datasets",
+    "text": "Tasks: GDP, and combining datasets\n\nCode: Plot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv\n\n\nSee if you can create a new csv file combining population size and gdp for Norway, using these files to start with\nhttps://github.com/datasets/gdp/blob/main/data/gdp.csv\nhttps://github.com/datasets/population/blob/main/data/population.csv",
+    "crumbs": [
+      "Tutorial"
+    ]
+  },
+  {
+    "objectID": "tutorial.html#try-on-your-own-data",
+    "href": "tutorial.html#try-on-your-own-data",
+    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
+    "section": "Try on your own data",
+    "text": "Try on your own data\n\nUse excel files, or csv files, or …\nNeed a datafile? Try Kaggle: https://www.kaggle.com/datasets?sort=votes&fileType=csv",
     "crumbs": [
       "Tutorial"
     ]
@@ -234,7 +484,7 @@
     "href": "pre-workshop.html",
     "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "",
-    "text": "The prerequisities for this workshop are the following:\n\nExperience with Python programming or a similar programming language.\nExperience with using Visual Studio Code for working with code.\nA laptop with administrator access.\n\nThis means that at a minmum, before coming to the workshop, you should have\n\ninstalled Visual Studio Code on your laptop\nhave administrator rights, if necessary temporary for the duration of the workshop (ask your local IT folks)\ninstalled Python or a similar programming language (for example, R should be fine too))\n\nFurther notes:\n\nWe may at the end work with modesl that locally on your laptop, for this a more recent laptop with a good GPU is preferred.\nKnowing the basics of version control is a benefit.\nKnowing the basics of LLMs and their usage is a benefit but not an absolute requirement.",
+    "text": "From the prerequisities for this workshop:\n\nExperience with Python programming or a similar programming language.\nExperience with using Visual Studio Code for working with code.\nA laptop with administrator access.\n\nThis means that at a minimum, before coming to the workshop, you should have\n\ninstalled Visual Studio Code on your laptop\nhave administrator rights, if necessary temporary for the duration of the workshop (ask your local IT folks)\ninstalled Python or a similar programming language (for example, R should be fine too)\n\nFurther notes:\n\nWe may at the end work with models that run locally on your laptop, for this a more recent laptop with a good GPU is preferred.\nKnowing the basics of version control is a benefit.\nKnowing the basics of LLMs and their usage is a benefit but not an absolute requirement.",
     "crumbs": [
       "Pre-workshop instructions"
     ]

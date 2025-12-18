@@ -228,6 +228,22 @@
 </ul>
 </div>
 </section>
+<section id="tools-that-can-do-this" class="slide level2">
+<h2>Tools that can do this</h2>
+<ul>
+<li>Cursor</li>
+<li>Claude Code</li>
+<li>Open AI Codex</li>
+<li>Google Gemini CLI</li>
+<li>…</li>
+</ul>
+<div class="fragment">
+<h3 id="this-workshop">This workshop</h3>
+<ul>
+<li>Something a bit different</li>
+</ul>
+</div>
+</section>
 <section id="about-this-workshop" class="slide level2">
 <h2>About this workshop</h2>
 <h3 id="connect-an-ide-through-an-api-to-an-llm-to-produce-and-run-code">Connect an IDE through an API to an LLM to produce and run code</h3>
@@ -278,6 +294,7 @@
 <li class="fragment">The workshop may run smooth - or not</li>
 </ul>
 </div>
+<!-- #### TUTORIAL #### -->
 </section>
 <section id="installation-instructions" class="slide level2">
 <h2>Installation instructions</h2>
@@ -306,167 +323,157 @@
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource .bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a></a><span class="ex">python</span> <span class="at">-m</span> venv /path/to/workshop_folder</span>
 <span id="cb2-2"><a></a><span class="bu">source</span> /path/to/workshop_folder</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="what-did-we-install" class="slide level2">
-<h2>What did we install</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource .bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a></a><span class="ex">conda</span> env export <span class="at">--from-history</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="visual-studio-code" class="slide level2">
+<h2>Visual Studio Code</h2>
+<ul>
+<li>Install the extension “Roo Code” (<em>not</em> “Nightly”)
+<ul>
+<li>https://docs.roocode.com</li>
+</ul></li>
+</ul>
 </section>
-<section id="our-first-task" class="slide level2">
-<h2>Our first task</h2>
+<section id="visual-studio-code-1" class="slide level2">
+<h2>Visual Studio Code</h2>
+<h3 id="connecting-to-an-llm">Connecting to an LLM</h3>
+<ul>
+<li>We will provide one</li>
+<li>Feel free to use your own subscription instead
+<ul>
+<li>Claude, Claude Sonnet 4.5 is recoomended by Roo Code</li>
+<li>Open AI, GPT-5 Codex should be OK</li>
+<li>Google, Gemini 3 Pro is best but 3 Flash should be fine too</li>
+</ul></li>
+</ul>
+<p>See https://docs.roocode.com/providers/ for instructions</p>
+</section>
+<section id="visual-studio-code-2" class="slide level2">
+<h2>Visual Studio Code</h2>
+<h3 id="connecting-to-uios-azure-api-to-models">Connecting to UiO’s Azure API to models</h3>
+<ul>
+<li>Click on the Roo Code icon (the Kangeroo) in the left sidebar</li>
+<li>Choose “use another provider” <!-- * Open Roo Code Settings (Click the gear icon in the Roo Code panel) --></li>
+<li>Select Provider: Choose “OpenAI Compatible”</li>
+<li>Use the Base URL and API Key provided</li>
+<li>Model: Type <code>dsdays26</code> in the search box, click on “Use custom: dsdays26”</li>
+<li>Select “Use Azure”</li>
+<li>Click “Get Started”</li>
+</ul>
+</section>
+<section id="visual-studio-code-3" class="slide level2">
+<h2>Visual Studio Code</h2>
+<h3 id="connecting-to-uios-azure-api-to-models-1">Connecting to UiO’s Azure API to models</h3>
+<ul>
+<li>Test the setup:
+<ul>
+<li>Under the message box, choose “Ask”</li>
+<li>Type “Just saying Hi”</li>
+<li>You should see “Task Completed”</li>
+</ul></li>
+</ul>
+</section>
+<section id="visual-studio-code-4" class="slide level2">
+<h2>Visual Studio Code</h2>
+<p>Roo Code will ask for permission to create a new file.</p>
+<h3 id="which-model-do-we-use">Which model do we use</h3>
+<ul>
+<li>GPT-4.1, because it is fast (and cheap), and more than good enough for this workshop</li>
+<li>If we have time, we may try a more advanced model
+<ul>
+<li>Or even one running locally…</li>
+</ul></li>
+</ul>
+<h3 id="working-directory">Working directory</h3>
+<ul>
+<li>Choose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)</li>
+</ul>
+</section>
+<section id="our-first-task---chatbot" class="slide level2">
+<h2>Our first task - Chatbot</h2>
+<p>Go to gpt.uio.no, select GPT 5 and ask the following question</p>
+<blockquote>
+<p>Write a Python program that casts a die 1000 times and determines the frequency of sixes</p>
+</blockquote>
+<p>Copy the program into VS Code and run it</p>
+<ul>
+<li>through the terminal (built-in or external)</li>
+<li>through VS Code</li>
+<li>remember to activate the environment you set up</li>
+</ul>
+</section>
+<section id="our-first-task---roo-code" class="slide level2">
+<h2>Our first task - Roo code</h2>
+<ul>
+<li>Under the message box, choose “Code”</li>
+</ul>
 <p>Ask:</p>
 <blockquote>
-<p>Write a program that casts a die 1000 times and determines the frequency of sixes</p>
+<p>Write a Python program that casts a die 1000 times and determines the frequency of sixes</p>
 </blockquote>
-<p>Then ask</p>
+<p>Roo Code will ask for permission to create a new file.</p>
+<p>Then ask Roo Code to run it for you.</p>
+</section>
+<section id="our-first-task---roo-code-1" class="slide level2">
+<h2>Our first task - Roo code</h2>
+<p>Now select “Ask” persona and ask</p>
 <blockquote>
 <p>What is the expected frequency?</p>
 </blockquote>
-<!--
-## Settings
-
-From https://github.com/OpenInterpreter/open-interpreter/blob/main/README.md#context-window-max-tokens
-
-> For local mode, smaller context windows will use less RAM,
-> so we recommend trying a much shorter window (~1000) if it's failing / if it's slow.
-> Make sure max_tokens is less than context_window.
-
-```.bash
-interpreter --local --max_tokens 1000 --context_window 3000
-```
-
-::: {.content-visible when-format="revealjs"}
-## Settings
-:::
-
-If you see a warning at first use around `LiteLLM:ERROR:`,
-add this to your `interpreter` command:
-
-```
---no-llm_supports_functions
-```
-
-## Another task
-
-> Write a program that casts two dice 1000 times and plots the distribution of the sum of the casts.
-
-## Other ways to use a local model
-
-Find the location of the model files
-
-```.bash
-interpreter --local_models
-```
-
-Now start the model server in a different terminal instance.
-
-On Mac:
-
-```.bash
-cd ~/Library/Application\ Support/open-interpreter/models/
-./Meta-Llama-3.1-8B-Instruct.Q4_K_M.llamafile
-```
-
-```
-software: llamafile 0.8.15
-model:    Meta-Llama-3.1-8B-Instruct.Q4_K_M.gguf
-compute:  Apple Metal GPU
-server:   http://127.0.0.1:8080/
-```
-
-
-Feel free to chat with the model ;-)
-
-
-::: {.content-visible when-format="revealjs"}
-## Other ways to use a local model
-:::
-
-
-Now you can use this server with Open-Interpreter:
-
-```.bash
-interpreter --api_base http://127.0.0.1:8080/v1
-```
-
-Alternatively:
-```.bash
-interpreter --api_base http://localhost:8080/v1 -m llamafile -ak dummykey
-```
-
-
-## We need a bigger model
-
-```.bash
-interpreter --model gpt-4o -ak YOUR_OPENAI_API_KEY
-```
-
-For other providers, see [https://docs.openinterpreter.com/language-models/hosted-models](https://docs.openinterpreter.com/language-models/hosted-models).
-
-Check the menu at the left.
-
-If you can't use such models, you can use my API access to gpt.uio.no
-
-
-Check the etherpad.
-
-Consider adding these options:
-
-```
---context_window 160000 --max_tokens 1000 --max_output 10000
-```
-
-::: {.content-visible when-format="revealjs"}
-## We need a bigger model
-::: 
-
-Now repeat the tasks we have done so far.
-
-<!-- 
-You can modify the max_tokens and context_window (in tokens) of locally running models.
-
-For local mode, smaller context windows will use less RAM, so we recommend trying a much shorter window (~1000) if it's failing / if it's slow. Make sure max_tokens is less than context_window.
-
-interpreter --local --max_tokens 1000 --context_window 3000
-
- -->
+</section>
+<section id="optional-put-the-folder-under-version-control" class="slide level2">
+<h2>Optional: put the folder under version control</h2>
+<ul>
+<li>Add and commit the script file</li>
+</ul>
+</section>
+<section id="another-task" class="slide level2">
+<h2>Another task</h2>
+<ul>
+<li>Select “Code” persona again</li>
+</ul>
+<blockquote>
+<p>Change the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.</p>
+</blockquote>
+<ul>
+<li>Give Roo Code the permissions it needs</li>
+</ul>
 </section>
 <section id="lets-get-some-data" class="slide level2">
 <h2>Let’s get some data</h2>
 <p>We will be using</p>
 <ul>
-<li><a href="https://datahub.io/core/population">https://datahub.io/core/population</a></li>
-<li><a href="https://datahub.io/core/gdp">https://datahub.io/core/gdp</a></li>
+<li><p><a href="https://datahub.io/core/population">https://datahub.io/core/population</a></p></li>
+<li><p><a href="https://datahub.io/core/gdp">https://datahub.io/core/gdp</a></p></li>
+<li><p>Download and inspect the csv file https://github.com/datasets/population/blob/main/data/population.csv</p>
+<ul>
+<li>OR ask Roo Code if it can do that for you!</li>
+</ul></li>
 </ul>
 </section>
 <section id="tasks-population" class="slide level2">
 <h2>Tasks: population</h2>
+<ul>
+<li>Start a new task</li>
+</ul>
 <blockquote>
-<p>Download and inspect the csv file from https://github.com/datasets/population/blob/main/data/population.csv</p>
+<p><code>Ask</code>: What can you tell me about the file population.csv?</p>
 </blockquote>
 <blockquote>
-<p>Plot the population size of Norway for all years present in the dataset</p>
+<p><code>Code</code>: Plot the population size of Norway for all years present in the dataset</p>
 </blockquote>
 <blockquote>
-<p>Plot the population size of the Nordic countries for all years present in the dataset together in one plot</p>
+<p><code>Code</code>: Plot the population size of the Nordic countries for all years present in the dataset together in one plot</p>
 </blockquote>
 </section>
 <section id="tasks-gdp-and-combining-datasets" class="slide level2">
 <h2>Tasks: GDP, and combining datasets</h2>
 <blockquote>
-<p>Plot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv</p>
-</blockquote>
-<blockquote>
-<p>Create a new csv file combining population size and gdp for Norway, use these files</p>
+<p><code>Code</code>: Plot the GDP of the Nordic countries together in one plot for all years present in the dataset from https://github.com/datasets/gdp/blob/main/data/gdp.csv</p>
 </blockquote>
 <ul>
-<li>https://github.com/datasets/gdp/blob/main/data/gdp.csv</li>
-<li>https://github.com/datasets/population/blob/main/data/population.csv</li>
+<li><p>See if you can create a new csv file combining population size and gdp for Norway, using these files to start with</p></li>
+<li><p>https://github.com/datasets/gdp/blob/main/data/gdp.csv</p></li>
+<li><p>https://github.com/datasets/population/blob/main/data/population.csv</p></li>
 </ul>
-</section>
-<section id="optional-create-a-script-file" class="slide level2">
-<h2>Optional: create a script file</h2>
-<blockquote>
-<p>Write the final program to a script file</p>
-</blockquote>
 </section>
 <section id="try-on-your-own-data" class="slide level2">
 <h2>Try on your own data</h2>
@@ -474,6 +481,7 @@ interpreter --local --max_tokens 1000 --context_window 3000
 <li>Use excel files, or csv files, or …</li>
 <li>Need a datafile? Try Kaggle: <a href="https://www.kaggle.com/datasets?sort=votes&amp;fileType=csv">https://www.kaggle.com/datasets?sort=votes&amp;fileType=csv</a></li>
 </ul>
+<!-- #### TUTORIAL #### -->
 </section>
 <section id="why-use-this-setup" class="slide level2">
 <h2>Why use this setup?</h2>
@@ -494,13 +502,8 @@ interpreter --local --max_tokens 1000 --context_window 3000
 </section>
 <section id="evaluation" class="slide level2">
 <h2>Evaluation</h2>
-<!--
-![](Evaluation-QR-464099_qr.png)
 
-### [https://nettskjema.no/a/464099](https://nettskjema.no/a/464099)
-:::
-
--->
+<img data-src="Evaluation-QR.png" class="quarto-figure quarto-figure-center r-stretch"><h3 id="httpsnettskjema.noadsdays2026"><a href="https://nettskjema.no/a/dsdays2026">https://nettskjema.no/a/dsdays2026</a></h3>
 
 
 </section>
