@@ -280,6 +280,16 @@
     ]
   },
   {
+    "objectID": "DSC_Days_2026_LLM_code.html#how-to-get-access-to-uios-azure-resources",
+    "href": "DSC_Days_2026_LLM_code.html#how-to-get-access-to-uios-azure-resources",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "How to get access to UiO’s Azure resources",
+    "text": "How to get access to UiO’s Azure resources\nFIXME",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
     "objectID": "DSC_Days_2026_LLM_code.html#evaluation",
     "href": "DSC_Days_2026_LLM_code.html#evaluation",
     "title": "LLM-powered Programming and Data Analysis",
@@ -344,47 +354,7 @@
     "href": "tutorial.html#visual-studio-code",
     "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "Visual Studio Code",
-    "text": "Visual Studio Code\n\nInstall the extension “Roo Code” (not “Nightly”)\n\nhttps://docs.roocode.com",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "tutorial.html#visual-studio-code-1",
-    "href": "tutorial.html#visual-studio-code-1",
-    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
-    "section": "Visual Studio Code",
-    "text": "Visual Studio Code\n\nConnecting to an LLM\n\nWe will provide one\nFeel free to use your own subscription instead\n\nClaude, Claude Sonnet 4.5 is recoomended by Roo Code\nOpen AI, GPT-5 Codex should be OK\nGoogle, Gemini 3 Pro is best but 3 Flash should be fine too\n\n\nSee https://docs.roocode.com/providers/ for instructions",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "tutorial.html#visual-studio-code-2",
-    "href": "tutorial.html#visual-studio-code-2",
-    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
-    "section": "Visual Studio Code",
-    "text": "Visual Studio Code\n\nConnecting to UiO’s Azure API to models\n\nClick on the Roo Code icon (the Kangeroo) in the left sidebar\nChoose “use another provider” \nSelect Provider: Choose “OpenAI Compatible”\nUse the Base URL and API Key provided\nModel: Type dsdays26 in the search box, click on “Use custom: dsdays26”\nSelect “Use Azure”\nClick “Get Started”",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "tutorial.html#visual-studio-code-3",
-    "href": "tutorial.html#visual-studio-code-3",
-    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
-    "section": "Visual Studio Code",
-    "text": "Visual Studio Code\n\nConnecting to UiO’s Azure API to models\n\nTest the setup:\n\nUnder the message box, choose “Ask”\nType “Just saying Hi”\nYou should see “Task Completed”",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "tutorial.html#visual-studio-code-4",
-    "href": "tutorial.html#visual-studio-code-4",
-    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
-    "section": "Visual Studio Code",
-    "text": "Visual Studio Code\nRoo Code will ask for permission to create a new file.\n\nWhich model do we use\n\nGPT-4.1, because it is fast (and cheap), and more than good enough for this workshop\nIf we have time, we may try a more advanced model\n\nOr even one running locally…\n\n\n\n\nWorking directory\n\nChoose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)",
+    "text": "Visual Studio Code\n\nInstall the extension “Roo Code” (not “Nightly”)\n\nhttps://docs.roocode.com\n\n\n\nConnecting to an LLM\n\nWe will provide one\nFeel free to use your own subscription instead\n\nClaude, Claude Sonnet 4.5 is recoomended by Roo Code\nOpen AI, GPT-5 Codex should be OK\nGoogle, Gemini 3 Pro is best but 3 Flash should be fine too\n\n\nSee https://docs.roocode.com/providers/ for instructions\n\n\nConnecting to UiO’s Azure API to models\n\nClick on the Roo Code icon (the Kangeroo) in the left sidebar\nChoose “use another provider” \nSelect Provider: Choose “OpenAI Compatible”\nUse the Base URL and API Key provided\nModel: Type dsdays26 in the search box, click on “Use custom: dsdays26”\nSelect “Use Azure”\nClick “Get Started”\n\n\n\nConnecting to UiO’s Azure API to models\n\nTest the setup:\n\nUnder the message box, choose “Ask”\nType “Just saying Hi”\nYou should see “Task Completed”\n\n\nRoo Code will ask for permission to create a new file.\n\n\nWhich model do we use\n\nGPT-4.1, because it is fast (and cheap), and more than good enough for this workshop\nIf we have time, we may try a more advanced model\n\nOr even one running locally…\n\n\n\n\nWorking directory\n\nChoose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)",
     "crumbs": [
       "Tutorial"
     ]
@@ -404,17 +374,7 @@
     "href": "tutorial.html#our-first-task---roo-code",
     "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "Our first task - Roo code",
-    "text": "Our first task - Roo code\n\nUnder the message box, choose “Code”\n\nAsk:\n\nWrite a Python program that casts a die 1000 times and determines the frequency of sixes\n\nRoo Code will ask for permission to create a new file.\nThen ask Roo Code to run it for you.",
-    "crumbs": [
-      "Tutorial"
-    ]
-  },
-  {
-    "objectID": "tutorial.html#our-first-task---roo-code-1",
-    "href": "tutorial.html#our-first-task---roo-code-1",
-    "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
-    "section": "Our first task - Roo code",
-    "text": "Our first task - Roo code\nNow select “Ask” persona and ask\n\nWhat is the expected frequency?",
+    "text": "Our first task - Roo code\n\nUnder the message box, choose “Code”\n\nAsk:\n\nWrite a Python program that casts a die 1000 times and determines the frequency of sixes\n\nRoo Code will ask for permission to create a new file.\nThen ask Roo Code to run it for you.\nNow select “Ask” persona and ask\n\nWhat is the expected frequency?",
     "crumbs": [
       "Tutorial"
     ]
