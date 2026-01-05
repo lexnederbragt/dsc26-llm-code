@@ -134,7 +134,7 @@
     "href": "DSC_Days_2026_LLM_code.html#visual-studio-code-1",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Visual Studio Code",
-    "text": "Visual Studio Code\nConnecting to an LLM\n\nWe will provide one\nFeel free to use your own subscription instead\n\nClaude, Claude Sonnet 4.5 is recoomended by Roo Code\nOpen AI, GPT-5 Codex should be OK\nGoogle, Gemini 3 Pro is best but 3 Flash should be fine too\n\n\nSee https://docs.roocode.com/providers/ for instructions",
+    "text": "Visual Studio Code\nConnecting to an LLM\n\nWe will provide one\nFeel free to use your own subscription instead\n\nClaude, Claude Sonnet 4.5 is recoomended by Roo Code\nOpen AI, GPT-5 Codex should be OK\nGoogle, Gemini 3 Pro is best but 3 Flash should be fine too\n\n\nSee docs.roocode.com/providers/ for instructions",
     "crumbs": [
       "Slides"
     ]
@@ -164,7 +164,7 @@
     "href": "DSC_Days_2026_LLM_code.html#visual-studio-code-4",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Visual Studio Code",
-    "text": "Visual Studio Code\nRoo Code will ask for permission to create a new file.\nWhich model do we use\n\nGPT-4.1, because it is fast (and cheap), and more than good enough for this workshop\nIf we have time, we may try a more advanced model\n\nOr even one running locally…\n\n\nWorking directory\n\nChoose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)",
+    "text": "Visual Studio Code\nRoo Code will ask for permission to create a new file.\nWhich model do we use\n\nGPT-4.1, because it is fast (and cheap), and more than good enough for this workshop\nIf we have time, we may try a more advanced model\n\nWorking directory\n\nChoose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)",
     "crumbs": [
       "Slides"
     ]
@@ -194,7 +194,7 @@
     "href": "DSC_Days_2026_LLM_code.html#our-first-task---roo-code-1",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Our first task - Roo code",
-    "text": "Our first task - Roo code\nNow select “Ask” persona and ask\n\nWhat is the expected frequency?",
+    "text": "Our first task - Roo code\nNow select “Ask” persona and ask:\n\nWhat is the expected frequency?",
     "crumbs": [
       "Slides"
     ]
@@ -214,7 +214,7 @@
     "href": "DSC_Days_2026_LLM_code.html#another-task",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Another task",
-    "text": "Another task\n\nSelect “Code” persona again\n\n\nChange the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.\n\n\nGive Roo Code the permissions it needs",
+    "text": "Another task\n\nSelect “Code” persona again and ask:\n\n\nChange the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.\n\n\nGive Roo Code the permissions it needs",
     "crumbs": [
       "Slides"
     ]
@@ -284,7 +284,17 @@
     "href": "DSC_Days_2026_LLM_code.html#how-to-get-access-to-uios-azure-resources",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "How to get access to UiO’s Azure resources",
-    "text": "How to get access to UiO’s Azure resources\nFIXME",
+    "text": "How to get access to UiO’s Azure resources\n\nhttps://www-int.uio.no/tjenester/it/ki/gpt-uio/bestill-api/api.html\nSetup fee: 800 kr\nTakes a few working days to set up\nBilling starts when usage &gt; 500 NOK (per month? per year?)",
+    "crumbs": [
+      "Slides"
+    ]
+  },
+  {
+    "objectID": "DSC_Days_2026_LLM_code.html#local-models",
+    "href": "DSC_Days_2026_LLM_code.html#local-models",
+    "title": "LLM-powered Programming and Data Analysis",
+    "section": "Local models?",
+    "text": "Local models?\n\nOften not good enough\nRecommend using Ollama and the biggest model optimized for coding that your machine can handle\n\nollama.com\ndocs.roocode.com/providers/ollama\n\nSoon: API access to local models provided by UiO/NTNU",
     "crumbs": [
       "Slides"
     ]
@@ -354,7 +364,7 @@
     "href": "tutorial.html#visual-studio-code",
     "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "Visual Studio Code",
-    "text": "Visual Studio Code\n\nInstall the extension “Roo Code” (not “Nightly”)\n\nhttps://docs.roocode.com\n\n\n\nConnecting to an LLM\n\nWe will provide one\nFeel free to use your own subscription instead\n\nClaude, Claude Sonnet 4.5 is recoomended by Roo Code\nOpen AI, GPT-5 Codex should be OK\nGoogle, Gemini 3 Pro is best but 3 Flash should be fine too\n\n\nSee https://docs.roocode.com/providers/ for instructions\n\n\nConnecting to UiO’s Azure API to models\n\nClick on the Roo Code icon (the Kangeroo) in the left sidebar\nChoose “use another provider” \nSelect Provider: Choose “OpenAI Compatible”\nUse the Base URL and API Key provided\nModel: Type dsdays26 in the search box, click on “Use custom: dsdays26”\nSelect “Use Azure”\nClick “Get Started”\n\n\n\nConnecting to UiO’s Azure API to models\n\nTest the setup:\n\nUnder the message box, choose “Ask”\nType “Just saying Hi”\nYou should see “Task Completed”\n\n\nRoo Code will ask for permission to create a new file.\n\n\nWhich model do we use\n\nGPT-4.1, because it is fast (and cheap), and more than good enough for this workshop\nIf we have time, we may try a more advanced model\n\nOr even one running locally…\n\n\n\n\nWorking directory\n\nChoose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)",
+    "text": "Visual Studio Code\n\nInstall the extension “Roo Code” (not “Nightly”)\n\nhttps://docs.roocode.com\n\n\n\nConnecting to an LLM\n\nWe will provide one\nFeel free to use your own subscription instead\n\nClaude, Claude Sonnet 4.5 is recoomended by Roo Code\nOpen AI, GPT-5 Codex should be OK\nGoogle, Gemini 3 Pro is best but 3 Flash should be fine too\n\n\nSee docs.roocode.com/providers/ for instructions\n\n\nConnecting to UiO’s Azure API to models\n\nClick on the Roo Code icon (the Kangeroo) in the left sidebar\nChoose “use another provider” \nSelect Provider: Choose “OpenAI Compatible”\nUse the Base URL and API Key provided\nModel: Type dsdays26 in the search box, click on “Use custom: dsdays26”\nSelect “Use Azure”\nClick “Get Started”\n\n\n\nConnecting to UiO’s Azure API to models\n\nTest the setup:\n\nUnder the message box, choose “Ask”\nType “Just saying Hi”\nYou should see “Task Completed”\n\n\nRoo Code will ask for permission to create a new file.\n\n\nWhich model do we use\n\nGPT-4.1, because it is fast (and cheap), and more than good enough for this workshop\nIf we have time, we may try a more advanced model\n\n\n\nWorking directory\n\nChoose a folder to work and open VS Code there (or use “File” –&gt; “Open Folder”)",
     "crumbs": [
       "Tutorial"
     ]
@@ -374,7 +384,7 @@
     "href": "tutorial.html#our-first-task---roo-code",
     "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "Our first task - Roo code",
-    "text": "Our first task - Roo code\n\nUnder the message box, choose “Code”\n\nAsk:\n\nWrite a Python program that casts a die 1000 times and determines the frequency of sixes\n\nRoo Code will ask for permission to create a new file.\nThen ask Roo Code to run it for you.\nNow select “Ask” persona and ask\n\nWhat is the expected frequency?",
+    "text": "Our first task - Roo code\n\nUnder the message box, choose “Code”\n\nAsk:\n\nWrite a Python program that casts a die 1000 times and determines the frequency of sixes\n\nRoo Code will ask for permission to create a new file.\nThen ask Roo Code to run it for you.\nNow select “Ask” persona and ask:\n\nWhat is the expected frequency?",
     "crumbs": [
       "Tutorial"
     ]
@@ -394,7 +404,7 @@
     "href": "tutorial.html#another-task",
     "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "Another task",
-    "text": "Another task\n\nSelect “Code” persona again\n\n\nChange the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.\n\n\nGive Roo Code the permissions it needs",
+    "text": "Another task\n\nSelect “Code” persona again and ask:\n\n\nChange the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.\n\n\nGive Roo Code the permissions it needs",
     "crumbs": [
       "Tutorial"
     ]
