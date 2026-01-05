@@ -1,3 +1,5 @@
+<!-- Sent to participants in advance -->
+
 From the prerequisities for this workshop:
 
 * Experience with Python programming or a similar programming language.
@@ -12,7 +14,7 @@ This means that at a minimum, before coming to the workshop, you should have
 
 Further notes:
 
-* We may at the end work with modesl that locally on your laptop, for this a more recent laptop with a good GPU is preferred.
+* We may at the end work with models that run locally on your laptop, for this a more recent laptop with a good GPU is preferred.
 * Knowing the basics of version control is a benefit.
 * Knowing the basics of LLMs and their usage is a benefit but not an absolute requirement.
 

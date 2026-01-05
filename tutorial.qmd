@@ -1,1 +1,178 @@
-Kommer
+## Installation instructions
+
+* Python 3.11 works
+* Python 3.14 should work
+* The latest R version should work
+
+::: {.content-visible when-format="revealjs"}
+## Installation instructions
+:::
+
+It is highly recommended to use an environment for Python.
+
+Choose between
+
+* conda
+* python virtual environment
+
+## Installation using conda
+
+```.bash
+conda create --name dsdays python=3.11
+conda activate dsdays
+```
+
+## Installation using python virtual env 
+
+```.bash
+python -m venv /path/to/workshop_folder
+source /path/to/workshop_folder
+```
+
+## Visual Studio Code
+
+* Install the extension "Roo Code" (*not* "Nightly")
+  * <https://docs.roocode.com>
+
+
+::: {.content-visible when-format="revealjs"}
+## Visual Studio Code 
+:::
+
+
+### Connecting to an LLM
+
+* We will provide one
+* Feel free to use your own subscription instead
+  * Claude, Claude Sonnet 4.5 is recoomended by Roo Code
+  * Open AI, GPT-5 Codex should be OK
+  * Google, Gemini 3 Pro is best but 3 Flash should be fine too
+
+See docs.roocode.com/providers/ for instructions
+
+::: {.content-visible when-format="revealjs"}
+## Visual Studio Code
+:::
+
+### Connecting to UiO's Azure API to models
+
+* Click on the Roo Code icon (the Kangeroo) in the left sidebar
+* Choose "use another provider"
+<!-- * Open Roo Code Settings (Click the gear icon in the Roo Code panel) -->
+* Select Provider: Choose "OpenAI Compatible"
+* Use the Base URL and API Key provided
+* Model: Type `dsdays26` in the search box, click on "Use custom: dsdays26"
+* Select "Use Azure"
+* Click "Get Started"
+
+::: {.content-visible when-format="revealjs"}
+## Visual Studio Code
+:::
+
+### Connecting to UiO's Azure API to models
+
+* Test the setup:
+  * Under the message box, choose "Ask"
+  * Type "Just saying Hi"
+  * You should see "Task Completed"
+
+::: {.content-visible when-format="revealjs"}
+## Visual Studio Code
+:::
+
+Roo Code will ask for permission to create a new file.
+
+### Which model do we use
+
+* GPT-4.1, because it is fast (and cheap), and more than good enough for this workshop
+* If we have time, we may try a more advanced model
+
+### Working directory
+
+* Choose a folder to work and open VS Code there (or use "File" --> "Open Folder")
+
+## Our first task - Chatbot
+
+Go to gpt.uio.no, select GPT 5 and ask the following question
+
+> Write a Python program that casts a die 1000 times and determines the frequency of sixes
+
+Copy the program into VS Code and run it
+
+* through the terminal (built-in or external)
+* through VS Code 
+* remember to activate the environment you set up
+
+## Our first task - Roo code
+
+* Under the message box, choose "Code"
+
+Ask:
+
+> Write a Python program that casts a die 1000 times and determines the frequency of sixes
+
+Roo Code will ask for permission to create a new file.
+
+
+Then ask Roo Code to run it for you.
+
+::: {.content-visible when-format="revealjs"}
+## Our first task - Roo code
+:::
+
+Now select "Ask" persona and ask:
+
+> What is the expected frequency?
+
+
+## Optional: put the folder under version control
+
+* Add and commit the script file
+
+## Another task
+
+* Select "Code" persona again and ask:
+
+> Change the program so that it casts two dice 1000 times and plots the distribution of the sum of the casts.
+
+* Give Roo Code the permissions it needs
+
+## Let's get some data
+
+We will be using
+
+* [https://datahub.io/core/population](https://datahub.io/core/population)
+* [https://datahub.io/core/gdp](https://datahub.io/core/gdp)
+
+* Download and inspect the csv file <https://github.com/datasets/population/blob/main/data/population.csv>
+  * OR ask Roo Code if it can do that for you!
+
+
+## Tasks: population
+
+* Start a new task
+
+> `Ask`: What can you tell me about the file population.csv?
+
+> `Code`: Plot the population size of Norway for all years present in the dataset
+
+> `Code`: Plot the population size of the Nordic countries for all years present in the dataset together in one plot
+
+## Tasks: GDP, and combining datasets
+
+> `Code`: Plot the GDP of the Nordic countries together in one plot for all years present in the dataset from <https://github.com/datasets/gdp/blob/main/data/gdp.csv>
+
+
+* See if you can create a new csv file combining population size and gdp for Norway, using these files to start with
+
+* <https://github.com/datasets/gdp/blob/main/data/gdp.csv>
+* <https://github.com/datasets/population/blob/main/data/population.csv>
+
+
+## Try on your own data
+
+* Use excel files, or csv files, or ...
+* Need a datafile? Try Kaggle
+  * [https://www.kaggle.com/datasets?sort=votes&fileType=csv](https://www.kaggle.com/datasets?sort=votes&fileType=csv)
+
+
