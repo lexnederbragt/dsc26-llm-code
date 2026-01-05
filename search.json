@@ -44,7 +44,7 @@
     "href": "DSC_Days_2026_LLM_code.html#about-this-workshop-1",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "About this workshop",
-    "text": "About this workshop\nConnect an IDE through an API to an LLM to produce and run code\n\nIDE: Visual Studio Code from Microsoft\nAPI: UiO’s Azure API to models\nLLM: OpenAI’s GPT models\n\nIf time: local models than run on your laptop",
+    "text": "About this workshop\nConnect an IDE through an API to an LLM to produce and run code\n\nIDE: Visual Studio Code from Microsoft\nAPI: UiO’s Azure API to models\nLLM: OpenAI’s GPT models",
     "crumbs": [
       "Slides"
     ]
@@ -254,7 +254,7 @@
     "href": "DSC_Days_2026_LLM_code.html#try-on-your-own-data",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Try on your own data",
-    "text": "Try on your own data\n\nUse excel files, or csv files, or …\nNeed a datafile? Try Kaggle: https://www.kaggle.com/datasets?sort=votes&fileType=csv",
+    "text": "Try on your own data\n\nUse excel files, or csv files, or …\nNeed a datafile? Try Kaggle\n\nhttps://www.kaggle.com/datasets?sort=votes&fileType=csv",
     "crumbs": [
       "Slides"
     ]
@@ -264,7 +264,7 @@
     "href": "DSC_Days_2026_LLM_code.html#why-use-this-setup",
     "title": "LLM-powered Programming and Data Analysis",
     "section": "Why use this setup?",
-    "text": "Why use this setup?\n\nYellow data\nOffline with local models",
+    "text": "Why use this setup?\n\nYellow data\nLatest models, often available earlier than through gpt.uio.no",
     "crumbs": [
       "Slides"
     ]
@@ -444,7 +444,7 @@
     "href": "tutorial.html#try-on-your-own-data",
     "title": "DSDays 2026: LLM-powered Programming and Data Analysis",
     "section": "Try on your own data",
-    "text": "Try on your own data\n\nUse excel files, or csv files, or …\nNeed a datafile? Try Kaggle: https://www.kaggle.com/datasets?sort=votes&fileType=csv",
+    "text": "Try on your own data\n\nUse excel files, or csv files, or …\nNeed a datafile? Try Kaggle\n\nhttps://www.kaggle.com/datasets?sort=votes&fileType=csv",
     "crumbs": [
       "Tutorial"
     ]
